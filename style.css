@@ -1,0 +1,508 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f7f0e8;
+
+    color: #4b3832;
+
+    margin: 0;
+
+}
+
+
+.container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 30px 0;
+
+}
+
+
+.finance {
+
+    color: #9a7057;
+
+    font-size: 13px;
+
+}
+
+
+.heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.heading h1 {
+
+    margin-bottom: 5px;
+
+}
+
+
+.heading p {
+
+    color: #8b7668;
+
+}
+
+
+.date {
+
+    background-color: white;
+
+    border: 1px solid #d8c8bb;
+
+    padding: 10px 15px;
+
+    border-radius: 6px;
+
+    color: #4b3832;
+
+}
+
+
+/* Summary */
+
+.summary {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin: 25px 0;
+
+}
+
+
+.card {
+
+    background-color: white;
+
+    padding: 20px;
+
+    border: 1px solid #e0d3c8;
+
+    border-radius: 8px;
+
+    flex: 1;
+
+}
+
+
+.card p,
+.card span {
+
+    color: #8b7668;
+
+}
+
+
+.card h2 {
+
+    margin: 10px 0;
+
+}
+
+
+/* Main */
+
+.main {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+
+.categories,
+.transactions {
+
+    background-color: white;
+
+    padding: 20px;
+
+    border: 1px solid #e0d3c8;
+
+    border-radius: 8px;
+
+}
+
+
+.categories {
+
+    width: 40%;
+
+}
+
+
+.transactions {
+
+    width: 60%;
+
+}
+
+
+.small {
+
+    color: #8b7668;
+
+    font-size: 14px;
+
+}
+
+
+/* Bar Chart */
+
+.bar-chart {
+
+    width: 90%;
+
+    height: 200px;
+
+    margin: 20px auto;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-around;
+
+    border-bottom: 1px solid #d8c8bb;
+
+}
+
+
+.bar {
+
+    width: 50px;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+
+.bar-fill {
+
+    width: 35px;
+
+    border-radius: 4px 4px 0 0;
+
+}
+
+
+.bar span {
+
+    font-size: 11px;
+
+    color: #8b7668;
+
+}
+
+
+.food {
+
+    height: 150px;
+
+    background-color: #b88968;
+
+}
+
+
+.transport {
+
+    height: 70px;
+
+    background-color: #d5a37d;
+
+}
+
+
+.shopping {
+
+    height: 95px;
+
+    background-color: #c49370;
+
+}
+
+
+.entertainment {
+
+    height: 55px;
+
+    background-color: #e2c2aa;
+
+}
+
+
+/* Categories */
+
+.category-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+
+.category {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: #faf7f4;
+
+    padding: 12px;
+
+    border: 1px solid #e8ddd5;
+
+    border-radius: 5px;
+
+}
+
+
+.category div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.category small {
+
+    color: #9a877a;
+
+}
+
+
+.category strong {
+
+    text-align: right;
+
+}
+
+
+/* Total */
+
+.total {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 15px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #e0d3c8;
+
+}
+
+
+/* Transactions */
+
+.transaction-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+
+.transaction-heading span {
+
+    color: #8b7668;
+
+    font-size: 13px;
+
+}
+
+
+.expense {
+
+    display: grid;
+
+    grid-template-columns: 1fr 90px 90px;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #eee5df;
+
+}
+
+
+.expense div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.expense small {
+
+    color: #9a877a;
+
+}
+
+
+.expense label {
+
+    background-color: #f1e3d8;
+
+    padding: 5px;
+
+    border-radius: 4px;
+
+    text-align: center;
+
+    font-size: 12px;
+
+}
+
+
+.expense strong {
+
+    text-align: right;
+
+}
+
+
+/* Footer */
+
+footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #9a877a;
+
+    font-size: 13px;
+
+    margin-top: 20px;
+
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .summary {
+
+        display: block;
+
+    }
+
+    .card {
+
+        margin-bottom: 15px;
+
+    }
+
+    .main {
+
+        display: block;
+
+    }
+
+    .categories,
+    .transactions {
+
+        width: auto;
+
+        margin-bottom: 20px;
+
+    }
+
+    .heading {
+
+        display: block;
+
+    }
+
+    .date {
+
+        margin-top: 10px;
+
+    }
+
+    .expense {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .expense strong {
+
+        text-align: left;
+
+    }
+
+    footer {
+
+        display: block;
+
+    }
+
+    .bar-chart {
+
+        width: 100%;
+
+    }
+
+    .bar {
+
+        width: 40px;
+
+    }
+
+    .bar-fill {
+
+        width: 30px;
+
+    }
+
+}
